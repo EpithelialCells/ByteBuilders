@@ -1,10 +1,19 @@
-import random
-import ui
-import os
+'''
+Import relevant modules
+'''
+import random # module that enables random selection
+import ui # custom-made module (ui.py)
+import os # module that controls command line interface
 
-right_guesses = []
-wrong_guesses = []
+'''
+Pregame
+'''
+right_guesses = [] # List to store correct guesses
+wrong_guesses = [] # List to store wrong guesses
 
+'''
+Function to hide unknown letters
+'''
 def hidden_word(word):
     output = ''
     for letter in word:

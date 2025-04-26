@@ -15,10 +15,6 @@ CLOCK = pygame.time.Clock() # initialise clock object for fps control
 BACKGROUND_IMAGE = pygame.image.load("background.jpg") # load background image
 BIRD_IMAGE = pygame.image.load("bird.jpg") # load bird image
 
-OBSTACLE_COLOR = (211, 253, 117) # define obstacle colour
-
-FONT = pygame.font.Font(None, 48) # load fonts
-
 '''
 Game set-up
 '''
@@ -30,7 +26,10 @@ bird_x = 50 # constant for bird x position
 bird_y = 300 # variable for bird y position
 bird_y_speed = 0 # variable for bird instantaneous y speed
 
+OBSTACLE_COLOR = (211, 253, 117) # define obstacle colour
 obstacle_x = 500 # variable for obstacle x position
+
+FONT = pygame.font.Font(None, 48) # load fonts
 
 def display_bird(x, y): # function to draw bird based on given x, y coordinates
     SCREEN.blit(BIRD_IMAGE, (x, y)) # display bird image

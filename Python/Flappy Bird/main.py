@@ -28,6 +28,7 @@ bird_y_speed = 0 # variable for bird instantaneous y speed
 
 OBSTACLE_COLOR = (211, 253, 117) # define obstacle colour
 obstacle_x = 500 # variable for obstacle x position
+obstacle_height = random.randint(50, 285) # select random obstacle height
 
 FONT = pygame.font.Font(None, 48) # load fonts
 
@@ -35,8 +36,6 @@ def display_bird(x, y): # function to draw bird based on given x, y coordinates
     SCREEN.blit(BIRD_IMAGE, (x, y)) # display bird image
 
 passed = False # boolean to prevent double counting score
-
-obstacle_height = random.randint(50, 285) # select random obstacle height
 
 running = True # boolean to control game loop
 
